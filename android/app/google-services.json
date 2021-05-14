@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "380466627239",
+    "project_id": "flash-chat-ced72",
+    "storage_bucket": "flash-chat-ced72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380466627239:android:b0a81d9af400019e7e9182",
+        "android_client_info": {
+          "package_name": "co.soumik.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380466627239-v36ha888ufd4lhv6peesnn77jropqb0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArBUzks3WmY25dQYO6C0rjhJl0aoB1uaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380466627239-v36ha888ufd4lhv6peesnn77jropqb0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
