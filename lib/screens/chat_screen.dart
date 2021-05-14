@@ -44,7 +44,7 @@ class _ChatScreenState extends State<ChatScreen> {
         leading: null,
         actions: <Widget>[
           IconButton(
-              icon: Icon(Icons.close),
+              icon: Icon(Icons.first_page),
               onPressed: () {
                 _auth.signOut();
                 Navigator.pushNamed(context, WelcomeScreen.id);
