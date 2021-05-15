@@ -62,9 +62,8 @@ class _ChatScreenState extends State<ChatScreen> {
           IconButton(
               icon: Icon(Icons.first_page),
               onPressed: () {
-                // _auth.signOut();
-                // Navigator.pushNamed(context, WelcomeScreen.id);
-                messagesStream();
+                _auth.signOut();
+                Navigator.pushNamed(context, WelcomeScreen.id);
               }),
         ],
         title: Text('⚡️Chat'),
@@ -100,6 +99,11 @@ class _ChatScreenState extends State<ChatScreen> {
                         },
                       );
                     },
+                    // child: Icon(
+                    //   Icons.send_rounded,
+                    //   size: 40,
+                    //   color: Colors.lightBlueAccent,
+                    // ),
                     child: Text(
                       'Send',
                       style: kSendButtonTextStyle,
