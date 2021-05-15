@@ -90,11 +90,18 @@ class _ChatScreenState extends State<ChatScreen> {
                   final messageText = message.get('text');
                   final sender = message.get('sender');
 
-                  final messageWidget = Text('$messageText from $sender');
+                  final messageWidget = Text(
+                    '$messageText from $sender',
+                    style: TextStyle(fontSize: 50.0),
+                  );
                   messageWidgets.add(messageWidget);
                 }
-                return Column(
-                  children: messageWidgets,
+                return Expanded(
+                  child: ListView(
+                    padding:
+                        EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+                    children: messageWidgets,
+                  ),
                 );
               },
             ),
