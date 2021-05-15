@@ -66,7 +66,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 Navigator.pushNamed(context, WelcomeScreen.id);
               }),
         ],
-        title: Text('⚡️Chat'),
+        title: Text('Chit Chat'),
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: SafeArea(
@@ -82,6 +82,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 children: <Widget>[
                   Expanded(
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
                       controller: messageTextController,
                       onChanged: (value) {
                         messageText = value;
@@ -99,14 +100,9 @@ class _ChatScreenState extends State<ChatScreen> {
                         },
                       );
                     },
-                    // child: Icon(
-                    //   Icons.send_rounded,
-                    //   size: 40,
-                    //   color: Colors.lightBlueAccent,
-                    // ),
-                    child: Text(
-                      'Send',
-                      style: kSendButtonTextStyle,
+                    child: Icon(
+                      Icons.send_outlined,
+                      color: Colors.lightBlueAccent,
                     ),
                   ),
                 ],
@@ -136,11 +132,11 @@ class MessageBubble extends StatelessWidget {
         children: <Widget>[
           Text(
             sender,
-            style: TextStyle(color: Colors.black54, fontSize: 12.0),
+            style: TextStyle(color: Colors.white60, fontSize: 12.0),
           ),
           Material(
             elevation: 5.0,
-            color: isMe ? Colors.lightBlueAccent : Colors.white,
+            color: isMe ? Colors.lightBlueAccent : Colors.blueGrey,
             borderRadius: isMe
                 ? BorderRadius.only(
                     topLeft: Radius.circular(30.0),
@@ -156,9 +152,7 @@ class MessageBubble extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
               child: Text(
                 text,
-                style: TextStyle(
-                    fontSize: 15.0,
-                    color: isMe ? Colors.white : Colors.black54),
+                style: TextStyle(fontSize: 15.0, color: Colors.white),
               ),
             ),
           ),

@@ -24,7 +24,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       duration: Duration(seconds: 1),
     );
 
-    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
+    animation = ColorTween(begin: Colors.blueGrey, end: Color(0xFF10062B))
         .animate(controller);
     controller.forward();
     controller.addListener(() {
@@ -53,8 +53,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 Hero(
                   tag: 'logo',
                   child: Container(
-                    child: Image.asset('images/logo.png'),
-                    height: 60.0,
+                    child: Image.asset('images/new.png'),
+                    height: 80.0,
                   ),
                 ),
                 TypewriterAnimatedTextKit(
@@ -62,6 +62,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   textStyle: TextStyle(
                     fontSize: 45.0,
                     fontWeight: FontWeight.w900,
+                    color: Colors.yellow[700],
                   ),
                 ),
               ],

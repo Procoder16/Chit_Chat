@@ -23,6 +23,10 @@ class FlashChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.light().copyWith(
+        scaffoldBackgroundColor: Color(0xFF10062B),
+        backgroundColor: Color(0xFF10062B),
+      ),
       debugShowCheckedModeBanner: false,
       initialRoute: WelcomeScreen.id,
       routes: {
